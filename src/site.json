@@ -1,0 +1,12 @@
+{
+  "name": "ALAF International Academy",
+  "url": "https://alafinternationalacademy.com",
+  "email": "info@alafinternationalacademy.com",
+  "campus": "https://campus.alafinternationalacademy.com/",
+  "instagram": "https://www.instagram.com/alafinternationalacademy/",
+  "tiktok": "https://www.tiktok.com/@alafiacademy",
+  "attention": { "label": "+507 6399-3131", "number": "50763993131" },
+  "admissions": { "label": "+507 6710-4100", "number": "50767104100" },
+  "administration": { "label": "+507 6613-8592", "number": "50766138592" },
+  "contact": { "transport": "whatsapp", "endpoint": "/api/contact" }
+}
