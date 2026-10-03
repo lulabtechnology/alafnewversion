@@ -56,6 +56,10 @@ El modo predeterminado es WhatsApp. No requiere un servidor de correo: el visita
 
 La entrega incorpora `robots.txt`, `sitemap.xml`, metadata social y datos estructurados. Si publicas en un dominio diferente, cambia `url` en `src/site.json` y ejecuta `npm run build`.
 
+## Publicar en Vercel
+
+Importa el repositorio con la raíz del proyecto como Root Directory. El archivo `vercel.json` configura el preset Other, el comando `npm run build` y Output Directory `dist`. No uses `public`: esa carpeta no es la salida del generador. El contacto por WhatsApp funciona en este despliegue estático.
+
 ## Activar contacto por correo
 
 La opción por correo está implementada, pero necesita un servicio configurado y un remitente verificado. No se han enviado mensajes reales durante las pruebas.

@@ -6,6 +6,16 @@ Sube el contenido de `dist/` al directorio público. Mantén las subcarpetas y l
 
 La página 404 utiliza rutas desde la raíz del dominio. Para publicar la web bajo una subcarpeta, ajusta las rutas de 404 y la configuración del hosting.
 
+## Vercel
+
+Importa este repositorio con su raíz como Root Directory. `vercel.json` selecciona el preset Other, ejecuta `npm run build` y publica `dist/`.
+
+La carpeta generada es `dist/`; configurar `public/` causa el error «No Output Directory named public found». El archivo de configuración incluido establece el directorio correcto para cada despliegue. Una actualización en la rama conectada al proyecto inicia un nuevo build.
+
+El modo WhatsApp funciona como web estática en Vercel. El adaptador de correo incluido es para Node.js o Netlify; activar correo en Vercel requiere añadir un adaptador compatible y configurar el proveedor.
+
+Referencia: https://vercel.com/docs/project-configuration/vercel-json#outputdirectory
+
 ## Netlify con función opcional
 
 Publica desde el proyecto completo utilizando `netlify.toml`. El comando de build es `npm run build`; la carpeta pública es `dist/`. La carpeta de funciones es `netlify/functions/`.
